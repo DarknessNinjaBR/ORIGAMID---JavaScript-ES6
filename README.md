@@ -5,11 +5,12 @@
 - Uso do DOM
 - Automação Frontend
 
+## Projeto Animais Fantásticos
+
+
 # Javascript course by ORIGAMID
 - Javascript basics
 - Use DOM
 - Frontend Automation
-
-## Projeto Animais Fantásticos
 
 ## Fantastic Animals Project
