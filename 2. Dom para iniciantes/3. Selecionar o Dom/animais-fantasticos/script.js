@@ -1,4 +1,5 @@
 //ID
+console.log('----------ID----------');
 //getElementById seleciona e retorna todos os elementos do DOM com a id correspondente
 const animaisSection = document.getElementById('animais');
 const contatoSection = document.getElementById('contato');
@@ -8,6 +9,7 @@ const nullSection = document.getElementById('eu-nao-existo');
 console.log(nullSection);
 
 //Classe ou Tag
+console.log('----------Classe ou Tag----------');
 //getElementsByClassName e getElementsByTagName procuram e retornam uma lista de elementos DOM. A lista retornada está em tempo real, então, se forem adicionados mais elementos, ela será atualizada automáticamente.
 //Seleciona pela classe e retorna uma HTMLCollection.
 const gridSection = document.getElementsByClassName('grid-section');
@@ -18,6 +20,7 @@ const ul = document.getElementsByTagName('ul'); // Procura por todos os elemento
 console.log(gridSection[0]);
 
 //Seletor Geral Único - Query Selector
+console.log('----------Seletor Geral Único - Query Selector----------');
 //querySelector retorna o primeiro elemento que combinar com o seu seletor CSS
 const animaisQs = document.querySelector('.animais');
 const contatoQs = document.querySelector('#contato');
@@ -32,6 +35,7 @@ const navItem = primeiraUl.querySelector('li')
 console.log(navItem);
 
 //Seletor Geral Lista - Query Selector All
+console.log('----------Seletor Geral Lista - Query Selector All----------');
 //querySelectorAll retorna todos os elementos que combinarem com o seu seletor CSS em uma NodeList
 const gridSectionQsA = document.querySelectorAll('.grid-section');
 const listas = document.querySelectorAll('ul');
@@ -43,6 +47,7 @@ console.log(fotosAnimais);
 console.log(fotosAnimais[1]);
 
 //HTMLCollection vs NodeList
+console.log('----------HTMLCollection vs NodeList----------');
 //Parecem um array, a diferença está nos metodos e propriedades de ambas. Além disso, a NodeList retornada com o querySelectorAll é estática
 const gridSectionHTML = document.getElementsByClassName('grid-section'); //retorna 3 itens
 const gridSectionNode = document.querySelectorAll('.grid-section'); //retorna 3 itens
@@ -55,6 +60,7 @@ console.log(gridSectionHTML[0]); //retorna <ul class="grid-section">...</ul>
 console.log(gridSectionNode[0]); //retorna <section class="grid-section animais" id="animais">...</section>
 
 //Array-Like
+console.log('----------Array-Like----------');
 //HTMLCollection e NodeList são arrays-like, parecem uma array mas não são. O método de Array forEach() por exemplo, existe apenas no NodeList
 gridSectionNode.forEach(function(item, index) {
     console.log(index, item);
@@ -70,6 +76,7 @@ arrayGrid.forEach(function(item){
 
 
 //Exercício
+console.log('----------Exercício----------');
 //Retorne no console todas as imagens do site
 const todasAsImgs = document.querySelectorAll('img');
 console.log(todasAsImgs);
